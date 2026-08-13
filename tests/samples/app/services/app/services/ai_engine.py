@@ -6,6 +6,7 @@ load_dotenv()  # Carrega as variáveis do arquivo .env
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
+
 def generate_initial_test(source_code: str) -> str:
     prompt = f"""
     Dado o seguinte código de uma API FastAPI em Python:
@@ -15,10 +16,11 @@ def generate_initial_test(source_code: str) -> str:
     Retorne APENAS o código Python válido, sem explicações em texto.
     """
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model="gemini-2.5-flash",
         contents=prompt,
     )
     return response.text.replace("```python", "").replace("```", "").strip()
+
 
 def fix_test_code(source_code: str, test_code: str, error_log: str) -> str:
     prompt = f"""
@@ -34,7 +36,7 @@ def fix_test_code(source_code: str, test_code: str, error_log: str) -> str:
     Corrija o código do teste para que passe no Pytest. Retorne APENAS o código Python corrigido.
     """
     response = client.models.generate_content(
-        model='gemini-2.5-flash',
+        model="gemini-2.5-flash",
         contents=prompt,
     )
     return response.text.replace("```python", "").replace("```", "").strip()

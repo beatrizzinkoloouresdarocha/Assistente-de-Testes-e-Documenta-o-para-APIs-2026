@@ -3,9 +3,11 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+
 class UserRegister(BaseModel):
     username: str
     age: int
+
 
 @app.post("/users/register")
 def register_user(user: UserRegister):

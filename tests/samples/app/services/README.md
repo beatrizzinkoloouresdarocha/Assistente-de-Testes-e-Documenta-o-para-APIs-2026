@@ -1,26 +1,25 @@
-# 📌 Nome do Projeto
+# Nome do Projeto
 
-> Breve descrição do projeto em uma ou duas frases explicando o problema que ele resolve.
-
----
+Breve descrição do que o projeto faz, qual problema ele resolve e quais são os seus principais recursos.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem:** Python 3.x
-- **Ambiente Virtual:** `venv`
-- **Bibliotecas Principais:** *(ex: pandas, requests, pytest)*
-
----
+- **Dependências principais:** Pygments, Pytest *(ajuste conforme as bibliotecas do seu projeto)*
+- **Controle de Versão:** Git
 
 ## 🚀 Como Executar o Projeto
 
-Siga os passos abaixo para rodar a aplicação em sua máquina local.
+Siga as instruções abaixo para rodar o projeto na sua máquina local:
 
-### 1. Pré-requisitos
-- Python instalado (versão 3.10 ou superior)
+### Pró-requisitos
+
+- Python 3.10+ instalado
 - Git instalado
 
-### 2. Clonar o repositório
-```bash
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-cd seu-repositorio
+### Passo a Passo
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   cd seu-repositorio
